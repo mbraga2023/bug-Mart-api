@@ -4,18 +4,31 @@ const cors = require("cors");
 const compression = require("compression");
 const morgan = require("morgan");
 
+// Routes
 const productRoutes = require("./routes/product.routes");
+const userRoutes = require("./routes/user.routes");
+const categoryRoutes = require("./routes/category.routes");
+
+// Middlewares
+const authenticate = require("./middleware/auth.middleware");
 
 const app = express();
 
-// Middlewares
+// ==========================================
+// Global Middlewares
+// ==========================================
 app.use(helmet());
 app.use(cors());
 app.use(compression());
 app.use(express.json());
 app.use(morgan("dev"));
 
-// Health
+// Fake authentication (replace with JWT later)
+app.use(authenticate);
+
+// ==========================================
+// Health Check
+// ==========================================
 app.get("/health", (req, res) => {
     res.status(200).json({
         status: "UP",
@@ -26,13 +39,32 @@ app.get("/health", (req, res) => {
     });
 });
 
+// ==========================================
 // API Routes
+// ==========================================
 app.use("/api/products", productRoutes);
+app.use("/api/users", userRoutes);
+app.use("/api/categories", categoryRoutes);
 
-// 404 (MUST BE LAST)
+// ==========================================
+// Global Error Handler
+// ==========================================
+app.use((err, req, res, next) => {
+    console.error(err);
+
+    res.status(err.status || 500).json({
+        success: false,
+        message: err.message || "Internal Server Error"
+    });
+});
+
+// ==========================================
+// 404 Handler
+// ==========================================
 app.use((req, res) => {
     res.status(404).json({
-        error: "Route not found"
+        success: false,
+        message: "Route not found"
     });
 });
 
