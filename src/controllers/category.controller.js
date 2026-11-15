@@ -1,4 +1,5 @@
 const categoryService = require("../services/category.service");
+const sendError = require("../utils/apiError");
 
 function getAll(req, res) {
     const categories = categoryService.getCategories();
@@ -10,8 +11,8 @@ function getById(req, res) {
     const category = categoryService.getCategoryById(req.params.id);
 
     if (!category) {
-        return res.status(404).json({
-            success: false,
+        return sendError(res, {
+            status: 404,
             message: "Category not found"
         });
     }

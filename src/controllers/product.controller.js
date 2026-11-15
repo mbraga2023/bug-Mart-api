@@ -1,4 +1,5 @@
 const productService = require("../services/product.service");
+const sendError = require("../utils/apiError");
 
 function getAll(req, res) {
     const { page = 1, limit = 10, q, categoryId, minPrice, maxPrice, sort } = req.query;
@@ -12,10 +13,7 @@ function getAll(req, res) {
             sort
         }));
     } catch (error) {
-        res.status(400).json({
-            success: false,
-            message: error.message
-        });
+        sendError(res, error, 400);
     }
 }
 
@@ -23,7 +21,8 @@ function getById(req, res) {
     const product = productService.getProductById(req.params.id);
 
     if (!product) {
-        return res.status(404).json({
+        return sendError(res, {
+            status: 404,
             message: "Product not found"
         });
     }

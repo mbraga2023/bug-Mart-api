@@ -12,7 +12,7 @@ module.exports = [
         rating: 4.6,
         reviews: 61,
         active: true,
-        image: "/images/products/gaming-mouse.jpg"
+        image: "/images/products/gaming-mouse.svg"
     },
     {
         id: 2,
@@ -27,7 +27,7 @@ module.exports = [
         rating: 4.7,
         reviews: 72,
         active: true,
-        image: "/images/products/mechanical-keyboard.jpg"
+        image: "/images/products/mechanical-keyboard.svg"
     },
     {
         id: 3,
@@ -42,7 +42,7 @@ module.exports = [
         rating: 4.8,
         reviews: 83,
         active: true,
-        image: "/images/products/usb-c-hub.jpg"
+        image: "/images/products/usb-c-hub.svg"
     },
     {
         id: 4,
@@ -57,7 +57,7 @@ module.exports = [
         rating: 4.9,
         reviews: 94,
         active: true,
-        image: "/images/products/noise-cancelling-headphones.jpg"
+        image: "/images/products/noise-cancelling-headphones.svg"
     },
     {
         id: 5,
@@ -72,7 +72,7 @@ module.exports = [
         rating: 4.5,
         reviews: 105,
         active: true,
-        image: "/images/products/27-inch-4k-monitor.jpg"
+        image: "/images/products/27-inch-4k-monitor.svg"
     },
     {
         id: 6,
@@ -87,7 +87,7 @@ module.exports = [
         rating: 4.6,
         reviews: 116,
         active: true,
-        image: "/images/products/gaming-chair.jpg"
+        image: "/images/products/gaming-chair.svg"
     },
     {
         id: 7,
@@ -102,7 +102,7 @@ module.exports = [
         rating: 4.7,
         reviews: 127,
         active: true,
-        image: "/images/products/webcam.jpg"
+        image: "/images/products/webcam.svg"
     },
     {
         id: 8,
@@ -117,7 +117,7 @@ module.exports = [
         rating: 4.8,
         reviews: 138,
         active: true,
-        image: "/images/products/usb-microphone.jpg"
+        image: "/images/products/usb-microphone.svg"
     },
     {
         id: 9,
@@ -132,7 +132,7 @@ module.exports = [
         rating: 4.9,
         reviews: 149,
         active: true,
-        image: "/images/products/laptop-stand.jpg"
+        image: "/images/products/laptop-stand.svg"
     },
     {
         id: 10,
@@ -147,7 +147,7 @@ module.exports = [
         rating: 4.5,
         reviews: 160,
         active: true,
-        image: "/images/products/wireless-charger.jpg"
+        image: "/images/products/wireless-charger.svg"
     },
     {
         id: 11,
@@ -162,7 +162,7 @@ module.exports = [
         rating: 4.6,
         reviews: 171,
         active: true,
-        image: "/images/products/portable-ssd.jpg"
+        image: "/images/products/portable-ssd.svg"
     },
     {
         id: 12,
@@ -177,7 +177,7 @@ module.exports = [
         rating: 4.7,
         reviews: 182,
         active: true,
-        image: "/images/products/external-hdd.jpg"
+        image: "/images/products/external-hdd.svg"
     },
     {
         id: 13,
@@ -192,7 +192,7 @@ module.exports = [
         rating: 4.8,
         reviews: 193,
         active: true,
-        image: "/images/products/wifi-router.jpg"
+        image: "/images/products/wifi-router.svg"
     },
     {
         id: 14,
@@ -207,7 +207,7 @@ module.exports = [
         rating: 4.9,
         reviews: 204,
         active: true,
-        image: "/images/products/mesh-router.jpg"
+        image: "/images/products/mesh-router.svg"
     },
     {
         id: 15,
@@ -222,7 +222,7 @@ module.exports = [
         rating: 4.5,
         reviews: 215,
         active: true,
-        image: "/images/products/bluetooth-speaker.jpg"
+        image: "/images/products/bluetooth-speaker.svg"
     },
     {
         id: 16,
@@ -237,7 +237,7 @@ module.exports = [
         rating: 4.6,
         reviews: 226,
         active: true,
-        image: "/images/products/smartwatch.jpg"
+        image: "/images/products/smartwatch.svg"
     },
     {
         id: 17,
@@ -252,7 +252,7 @@ module.exports = [
         rating: 4.7,
         reviews: 237,
         active: true,
-        image: "/images/products/gaming-controller.jpg"
+        image: "/images/products/gaming-controller.svg"
     },
     {
         id: 18,
@@ -267,7 +267,7 @@ module.exports = [
         rating: 4.8,
         reviews: 248,
         active: true,
-        image: "/images/products/graphics-tablet.jpg"
+        image: "/images/products/graphics-tablet.svg"
     },
     {
         id: 19,
@@ -282,7 +282,7 @@ module.exports = [
         rating: 4.9,
         reviews: 259,
         active: true,
-        image: "/images/products/desk-lamp.jpg"
+        image: "/images/products/desk-lamp.svg"
     },
     {
         id: 20,
@@ -297,7 +297,7 @@ module.exports = [
         rating: 4.5,
         reviews: 270,
         active: true,
-        image: "/images/products/office-chair.jpg"
+        image: "/images/products/office-chair.svg"
     },
     {
         id: 21,
@@ -312,7 +312,7 @@ module.exports = [
         rating: 4.6,
         reviews: 281,
         active: true,
-        image: "/images/products/ergonomic-mouse.jpg"
+        image: "/images/products/ergonomic-mouse.svg"
     },
     {
         id: 22,
@@ -327,7 +327,7 @@ module.exports = [
         rating: 4.7,
         reviews: 292,
         active: true,
-        image: "/images/products/docking-station.jpg"
+        image: "/images/products/docking-station.svg"
     },
     {
         id: 23,
@@ -342,7 +342,7 @@ module.exports = [
         rating: 4.8,
         reviews: 303,
         active: true,
-        image: "/images/products/wireless-earbuds.jpg"
+        image: "/images/products/wireless-earbuds.svg"
     },
     {
         id: 24,
@@ -357,7 +357,7 @@ module.exports = [
         rating: 4.9,
         reviews: 314,
         active: true,
-        image: "/images/products/power-bank.jpg"
+        image: "/images/products/power-bank.svg"
     },
     {
         id: 25,
@@ -372,7 +372,7 @@ module.exports = [
         rating: 4.5,
         reviews: 325,
         active: true,
-        image: "/images/products/smart-plug.jpg"
+        image: "/images/products/smart-plug.svg"
     },
     {
         id: 26,
@@ -387,7 +387,7 @@ module.exports = [
         rating: 4.6,
         reviews: 336,
         active: true,
-        image: "/images/products/projector.jpg"
+        image: "/images/products/projector.svg"
     },
     {
         id: 27,
@@ -402,7 +402,7 @@ module.exports = [
         rating: 4.7,
         reviews: 347,
         active: true,
-        image: "/images/products/gaming-desk.jpg"
+        image: "/images/products/gaming-desk.svg"
     },
     {
         id: 28,
@@ -417,7 +417,7 @@ module.exports = [
         rating: 4.8,
         reviews: 358,
         active: true,
-        image: "/images/products/hdmi-cable.jpg"
+        image: "/images/products/hdmi-cable.svg"
     },
     {
         id: 29,
@@ -432,7 +432,7 @@ module.exports = [
         rating: 4.9,
         reviews: 369,
         active: true,
-        image: "/images/products/usb-flash-drive.jpg"
+        image: "/images/products/usb-flash-drive.svg"
     },
     {
         id: 30,
@@ -447,6 +447,6 @@ module.exports = [
         rating: 4.5,
         reviews: 380,
         active: true,
-        image: "/images/products/mini-pc.jpg"
+        image: "/images/products/mini-pc.svg"
     }
 ];

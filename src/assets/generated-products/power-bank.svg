@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="480" viewBox="0 0 600 480" role="img" aria-labelledby="title description">
+  <title id="title">Power Bank 20000mAh</title>
+  <desc id="description">Original vector illustration of Power Bank 20000mAh</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#dcfce7"/>
+      <stop offset="1" stop-color="#f8fafc"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="12" stdDeviation="12" flood-color="#334155" flood-opacity=".18"/>
+    </filter>
+  </defs>
+  <rect width="600" height="480" rx="36" fill="url(#background)"/>
+  <circle cx="500" cy="90" r="90" fill="#fff" opacity=".28"/>
+  <circle cx="95" cy="370" r="110" fill="#fff" opacity=".24"/>
+  <path d="M90 374h420" stroke="#cbd5e1" stroke-width="3" stroke-linecap="round" opacity=".65"/>
+  <g filter="url(#shadow)"><rect x="225" y="120" width="150" height="235" rx="30" fill="#263449"/><rect x="246" y="145" width="108" height="38" rx="12" fill="#0f172a"/><text x="300" y="171" text-anchor="middle" fill="#dbeafe" font-size="18" font-family="Arial">88%</text><circle cx="300" cy="215" r="9" fill="#16a34a"/><path d="M275 270h50m-25-25v50" stroke="#e2e8f0" stroke-width="8" stroke-linecap="round"/></g>
+  <text x="300" y="430" text-anchor="middle" fill="#334155" font-size="21" font-family="Arial, sans-serif" font-weight="600">Power Bank 20000mAh</text>
+</svg>

@@ -1,4 +1,5 @@
 const users = require("../data/users");
+const sendError = require("../utils/apiError");
 
 function authenticate(req, res, next) {
     const userId = Number(req.header("x-user-id")) || 1;
@@ -6,7 +7,8 @@ function authenticate(req, res, next) {
     const user = users.find(u => u.id === userId);
 
     if (!user) {
-        return res.status(401).json({
+        return sendError(res, {
+            status: 401,
             message: "Invalid user"
         });
     }

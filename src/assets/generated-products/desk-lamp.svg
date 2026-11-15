@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="480" viewBox="0 0 600 480" role="img" aria-labelledby="title description">
+  <title id="title">LED Desk Lamp</title>
+  <desc id="description">Original vector illustration of LED Desk Lamp</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffedd5"/>
+      <stop offset="1" stop-color="#f8fafc"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="12" stdDeviation="12" flood-color="#334155" flood-opacity=".18"/>
+    </filter>
+  </defs>
+  <rect width="600" height="480" rx="36" fill="url(#background)"/>
+  <circle cx="500" cy="90" r="90" fill="#fff" opacity=".28"/>
+  <circle cx="95" cy="370" r="110" fill="#fff" opacity=".24"/>
+  <path d="M90 374h420" stroke="#cbd5e1" stroke-width="3" stroke-linecap="round" opacity=".65"/>
+  <g filter="url(#shadow)"><path d="M260 335h130" stroke="#475569" stroke-width="18" stroke-linecap="round"/><path d="M300 330l-15-100 80-80" fill="none" stroke="#263449" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/><path d="M340 132l90 18-29 55-90-18Z" fill="#ea580c"/><path d="M357 212l-38 34" stroke="#475569" stroke-width="9"/></g>
+  <text x="300" y="430" text-anchor="middle" fill="#334155" font-size="21" font-family="Arial, sans-serif" font-weight="600">LED Desk Lamp</text>
+</svg>

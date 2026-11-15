@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="480" viewBox="0 0 600 480" role="img" aria-labelledby="title description">
+  <title id="title">1080p Webcam</title>
+  <desc id="description">Original vector illustration of 1080p Webcam</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fef3c7"/>
+      <stop offset="1" stop-color="#f8fafc"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="12" stdDeviation="12" flood-color="#334155" flood-opacity=".18"/>
+    </filter>
+  </defs>
+  <rect width="600" height="480" rx="36" fill="url(#background)"/>
+  <circle cx="500" cy="90" r="90" fill="#fff" opacity=".28"/>
+  <circle cx="95" cy="370" r="110" fill="#fff" opacity=".24"/>
+  <path d="M90 374h420" stroke="#cbd5e1" stroke-width="3" stroke-linecap="round" opacity=".65"/>
+  <g filter="url(#shadow)"><rect x="170" y="205" width="260" height="82" rx="34" fill="#263449"/><circle cx="300" cy="246" r="36" fill="#0f172a"/><circle cx="300" cy="246" r="23" fill="#d97706"/><circle cx="300" cy="246" r="11" fill="#dbeafe"/><path d="M260 288v48h80v-48" fill="#475569"/><circle cx="205" cy="246" r="7" fill="#86efac"/></g>
+  <text x="300" y="430" text-anchor="middle" fill="#334155" font-size="21" font-family="Arial, sans-serif" font-weight="600">1080p Webcam</text>
+</svg>

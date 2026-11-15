@@ -1,4 +1,5 @@
 const cartService = require("../services/cart.service");
+const sendError = require("../utils/apiError");
 
 function createCart(req, res) {
     try {
@@ -6,7 +7,7 @@ function createCart(req, res) {
         const cart = cartService.createCart(userId);
         res.status(201).json(cart);
     } catch (error) {
-        res.status(400).json({ success: false, message: error.message });
+        sendError(res, error, 400);
     }
 }
 
@@ -14,7 +15,7 @@ function getCart(req, res) {
     try {
         res.json(cartService.getCart(req.params.cartId));
     } catch (error) {
-        res.status(error.status || 404).json({ success: false, message: error.message });
+        sendError(res, error, 404);
     }
 }
 
@@ -27,7 +28,7 @@ function addItem(req, res) {
         );
         res.json(cartService.getCart(req.params.cartId));
     } catch (error) {
-        res.status(error.status || 400).json({ success: false, message: error.message });
+        sendError(res, error, 400);
     }
 }
 
@@ -40,7 +41,7 @@ function updateItem(req, res) {
         );
         res.json(cartService.getCart(req.params.cartId));
     } catch (error) {
-        res.status(error.status || 400).json({ success: false, message: error.message });
+        sendError(res, error, 400);
     }
 }
 
@@ -49,7 +50,7 @@ function removeItem(req, res) {
         cartService.removeItem(req.params.cartId, Number(req.params.productId));
         res.json(cartService.getCart(req.params.cartId));
     } catch (error) {
-        res.status(error.status || 400).json({ success: false, message: error.message });
+        sendError(res, error, 400);
     }
 }
 
@@ -57,7 +58,7 @@ function clearCart(req, res) {
     try {
         res.json(cartService.clearCart(req.params.cartId));
     } catch (error) {
-        res.status(error.status || 404).json({ success: false, message: error.message });
+        sendError(res, error, 404);
     }
 }
 
@@ -66,7 +67,7 @@ function deleteCart(req, res) {
         cartService.deleteCart(req.params.cartId);
         res.status(204).end();
     } catch (error) {
-        res.status(error.status || 404).json({ success: false, message: error.message });
+        sendError(res, error, 404);
     }
 }
 
@@ -75,7 +76,7 @@ function loginCart(req, res) {
         const cart = cartService.associateUser(req.params.cartId, req.body.userId);
         res.json(cartService.getCart(cart.cartId));
     } catch (error) {
-        res.status(error.status || 400).json({ success: false, message: error.message });
+        sendError(res, error, 400);
     }
 }
 

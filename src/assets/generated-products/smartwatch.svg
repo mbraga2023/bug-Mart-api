@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="480" viewBox="0 0 600 480" role="img" aria-labelledby="title description">
+  <title id="title">Smart Watch</title>
+  <desc id="description">Original vector illustration of Smart Watch</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fce7f3"/>
+      <stop offset="1" stop-color="#f8fafc"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="12" stdDeviation="12" flood-color="#334155" flood-opacity=".18"/>
+    </filter>
+  </defs>
+  <rect width="600" height="480" rx="36" fill="url(#background)"/>
+  <circle cx="500" cy="90" r="90" fill="#fff" opacity=".28"/>
+  <circle cx="95" cy="370" r="110" fill="#fff" opacity=".24"/>
+  <path d="M90 374h420" stroke="#cbd5e1" stroke-width="3" stroke-linecap="round" opacity=".65"/>
+  <g filter="url(#shadow)"><path d="M265 110h70l18 80h-106Zm-18 170h106l-18 90h-70Z" fill="#db2777"/><rect x="220" y="180" width="160" height="120" rx="30" fill="#263449"/><rect x="240" y="200" width="120" height="80" rx="18" fill="#dbeafe"/><circle cx="300" cy="240" r="23" fill="#db2777"/><path d="M300 220v22l15 10" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round"/></g>
+  <text x="300" y="430" text-anchor="middle" fill="#334155" font-size="21" font-family="Arial, sans-serif" font-weight="600">Smart Watch</text>
+</svg>

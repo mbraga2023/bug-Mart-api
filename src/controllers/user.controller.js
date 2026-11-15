@@ -1,4 +1,5 @@
 const userService = require("../services/user.service");
+const sendError = require("../utils/apiError");
 
 function getAll(req, res) {
     const page = req.query.page || 1;
@@ -13,8 +14,8 @@ function getById(req, res) {
     const user = userService.getUserById(req.params.id);
 
     if (!user) {
-        return res.status(404).json({
-            success: false,
+        return sendError(res, {
+            status: 404,
             message: "User not found"
         });
     }
